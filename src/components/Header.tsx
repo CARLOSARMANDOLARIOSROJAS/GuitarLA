@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 
-export const Header = ({ cart, setCart, removeFromCart, handleAdd, handleDelete, errorMessage, clearCart }) => {
+export const Header = ({ cart, removeFromCart, handleAdd, handleDelete, errorMessage, clearCart }) => {
   // agregar uno mas con el boton al carrito
   const isEmpty = useMemo(() => cart.length === 0, [cart]);
   const totalPagar = useMemo(
