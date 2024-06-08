@@ -14,7 +14,7 @@ function App() {
     return localStorageCart ? JSON.parse(localStorageCart) : [];
   }
 
-  const [data, setData] = useState(db);
+  const [data] = useState(db);
   const [cart, setCart] = useState(initialCart);
   const [errorMessage, setErrorMessage] = useState('');
  
